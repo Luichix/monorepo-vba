@@ -1,0 +1,171 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon.CargarCinta">
+	<ribbon startFromScratch="true">
+		<tabs>
+			<tab id="Tab1" label="GESTIÓN ADMINISTRATIVA">
+				
+				<group id="Group1" label="Gestor">
+					<button id="Button1" label="Principal" image="rocket"  size="large"  getEnabled="Ribbon.DesactivarBoton1" onAction="Boton1" />		
+				</group>
+
+				<group id="Group2" label="Registro de Inventario">
+							
+					<button id="Button2" label="Entradas" image="Compras_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton2" onAction="Boton2" />					
+					<button id="Button3" label="Salidas" image="Abrir_32x32" size="large"   getEnabled="Ribbon.DesactivarBoton3" onAction="Boton3" />
+					<button id="Button4" label="Existencias" image="Compras3_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton4" onAction="Boton4" />
+					<button id="Button36" label="Reporte" image="mayor_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton36" onAction="Boton36" />
+					
+				</group>
+
+
+				<group id="Group3" label="Agenda">	
+					<button id="Button5" label="Proveedores" image="Proveedor_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton5" onAction="Boton5" />			
+					<button id="Button6" label="Clientes" image="clientes2_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton6" onAction="Boton6" />					
+					<button id="Button7" label="Encargos" image="Lista_32x32" size="large"   getEnabled="Ribbon.DesactivarBoton7" onAction="Boton7" />
+
+				</group>
+
+			
+				<group id="Group4" label="Recursos Humanos">
+
+				
+
+					<button id="Button8" label="ID Personal" image="subscribe"  size="large"  getEnabled="Ribbon.DesactivarBoton8" onAction="Boton8" />					
+					<button id="Button9" label="Pagos" image="cobrar-credito" size="large"   getEnabled="Ribbon.DesactivarBoton9" onAction="Boton9" />
+					
+					<button id="Button12" label="Asistencias" image="calendar-icon_34471" size="large"  getEnabled="Ribbon.DesactivarBoton12" onAction="Boton12" />
+					<button id="Button11" label="Ausencias" image="icono_calendario_foros" size="large"   getEnabled="Ribbon.DesactivarBoton11" onAction="Boton11" />
+					
+					<button id="Button10" label="Reportes" image="reporte3_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton10" onAction="Boton10" />
+				
+
+				</group>
+
+				<group id="Group5" label="Egresos Varios">
+
+					<button id="Button13" label="Ganaderia" image="Vaca_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton13" onAction="Boton13" />					
+					<button id="Button14" label="Madera" image="bosque_32x32" size="large"   getEnabled="Ribbon.DesactivarBoton14" onAction="Boton14" />
+					<button id="Button15" label="Gastos" image="Marca_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton15" onAction="Boton15" />
+					<button id="Button16" label="Legales" image="Documentos_32x32" size="large"   getEnabled="Ribbon.DesactivarBoton16" onAction="Boton16" />
+					<button id="Button17" label="Familia" image="Familia_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton17" onAction="Boton17" />
+
+				</group>
+
+				<group id="Group6" label="Usuario">
+					<button id="Button26" label="Cambiar Usuario" image="usuario2_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton26" onAction="Boton26" />	
+				</group>
+
+				<group id="Group7" label="Guardar">
+
+					<button id="Button18" label="Guardar" image="Guardar_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton18" onAction="Boton18" />		
+					
+				</group>
+
+		
+				
+			</tab>
+
+			<tab id="Tab2" label="GESTIÓN GANADERA">
+				
+				<group id="Group8" label="Gestor">
+					<button id="Button19" label="Principal" image="rocket"  size="large"  getEnabled="Ribbon.DesactivarBoton19" onAction="Boton19" />		
+				</group>
+
+
+
+				<group id="Group9" label="Registro de Operaciones">
+							
+					<button id="Button20" label="Animales" image="animales2_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton20" onAction="Boton20" />					
+					<button id="Button21" label="Ordeños" image="leche_32x32" size="large"   getEnabled="Ribbon.DesactivarBoton21" onAction="Boton21" />
+					<button id="Button22" label="Medicación" image="medicar_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton22" onAction="Boton22" />
+					<button id="Button23" label="Reproducción" image="ganaderia2_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton23" onAction="Boton23" />
+					
+				</group>
+
+				<group id="Group10" label="Usuario">
+
+	
+					<button id="Button25" label="Cambiar Usuario" image="usuario2_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton25" onAction="Boton25" />		
+				</group>
+
+				<group id="Group11" label="Guardar">
+
+					<button id="Button24" label="Guardar" image="Guardar_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton24" onAction="Boton24" />		
+						
+				</group>
+				
+
+
+			</tab>
+
+				<tab id="Tab3" label="GESTIÓN CONTABLE">
+				
+				<group id="Group12" label="Gestor">
+					<button id="Button27" label="Principal" image="rocket"  size="large"  getEnabled="Ribbon.DesactivarBoton27" onAction="Boton27" />		
+				</group>
+				
+				<group id="Group13" label="Cuentas Contables">
+					<button id="Button28" label="Catalogo de Cuentas" image="Catalogo_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton28" onAction="Boton28" />		
+				</group>
+
+
+			
+				<group id="Group14" label="Registro en Libros">
+
+					<button id="Button29" label="Libro Diario" image="Ventas_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton29" onAction="Boton29" />
+
+					<button id="Button30" label="Libro Mayor" image="mayor3_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton30" onAction="Boton30" />
+
+					<button id="Button31" label="Balance de Comprobación" image="reporte3_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton31" onAction="Boton31" />
+
+				</group>
+
+				<group id="Group15" label="Estados Financieros">
+
+					<button id="Button32" label="Estado de Resultado" image="estado_32x32" size="large"  getEnabled="Ribbon.DesactivarBoton32" onAction="Boton32" />
+
+					<button id="Button33" label="Balance General" image="informe" size="large"  getEnabled="Ribbon.DesactivarBoton33" onAction="Boton33" />
+
+
+				</group>
+
+
+				<group id="Group16" label="Usuario">
+
+	
+					<button id="Button34" label="Cambiar Usuario" image="usuario2_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton34" onAction="Boton34" />		
+				</group>
+
+				<group id="Group17" label="Guardar">
+
+					<button id="Button35" label="Guardar" image="Guardar_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton35" onAction="Boton35" />		
+						
+				</group>
+			
+			</tab>
+
+			<tab id="Tab4" label="CONFIGURACIÓN">
+	
+				<group id="Group18" label="Gestor">
+					<button id="Button37" label="Principal" image="rocket"  size="large"  getEnabled="Ribbon.DesactivarBoton37" onAction="Boton37" />		
+				</group>
+
+				<group id="Group19" label="Productos">
+					<button id="Button38" label="Crear Código" image="cambiar1"  size="large"  getEnabled="Ribbon.DesactivarBoton38" onAction="Boton38" />		
+					<button id="Button39" label="Modificar Código" image="ajustes1"  size="large"  getEnabled="Ribbon.DesactivarBoton39" onAction="Boton39" />		
+
+
+				</group>
+
+				<group id="Group20" label="Usuarios">
+					<button id="Button40" label="Nuevo Usuario" image="Configurar"  size="large"  getEnabled="Ribbon.DesactivarBoton40" onAction="Boton40" />		
+					<button id="Button41" label="Eliminar Usuario" image="Configurar3"  size="large"  getEnabled="Ribbon.DesactivarBoton41" onAction="Boton41" />		
+					<button id="Button42" label="Modificar Permisos" image="Info_32x32"  size="large"  getEnabled="Ribbon.DesactivarBoton42" onAction="Boton42" />		
+
+
+				</group>
+
+			</tab>
+
+		</tabs>
+	</ribbon>
+</customUI>
